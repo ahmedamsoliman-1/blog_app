@@ -14,6 +14,12 @@
       <div class="description">
         <p><%- blog.body %></p>
       </div>
+      <textarea class="description" id="textbox"><%- blog.body %></textarea>
+      <br />
+      <br />
+      <button id="clipboard" onclick="copyText()" class="ui green full button">
+        Copy
+      </button>
       <a class="ui blue basic button" href="/blogs/<%= blog._id%>/edit">Edit</a>
       <form
         id="delete"
