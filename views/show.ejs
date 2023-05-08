@@ -20,14 +20,15 @@
       <button id="clipboard" onclick="copyText()" class="ui green full button">
         Copy
       </button>
-      <a class="ui blue basic button" href="/blogs/<%= blog._id%>/edit">Edit</a>
+      <a class="ui blue full button" href="/blogs/<%= blog._id%>/edit">Edit</a>
       <form
         id="delete"
         action="/blogs/<%= blog._id%>?_method=DELETE"
         method="POST"
       >
-        <button class="ui red basic button">Delete</button>
+        <button class="ui red full button">Delete</button>
       </form>
+      <a class="ui black full button" href="/">Back</a>
     </div>
   </div>
 </div>

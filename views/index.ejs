@@ -2,6 +2,9 @@
 
 <div class="ui main text container">
   <div class="ui huge header">Cover Letters Application</div>
+  <p class="ui inverted segment">
+    Current covers count: <%= Object.keys(blogs).length; %>
+  </p>
   <div class="ui top segment">
     <div class="ui divided items">
       <% blogs.forEach(function(blog) { %>
