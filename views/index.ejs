@@ -10,9 +10,7 @@
       <% blogs.forEach(function(blog) { %>
       <div class="item">
         <div class="image">
-          <img
-            src="https://s3.amazonaws.com/ahmedamsoliman-replica/IAM/Instagram/01_10_Oct_2019_001_120723_185.jpg"
-          />
+          <img src="<%= blog.image %>" />
         </div>
 
         <div class="content">
@@ -21,7 +19,7 @@
             <span> <%= blog.created.toDateString() %> </span>
           </div>
           <div class="desciption">
-            <p><%= blog.body.substring(0, 100) %>...</p>
+            <p><%= blog.body.substring(0, 300) %>...</p>
           </div>
           <div class="extra">
             <a
