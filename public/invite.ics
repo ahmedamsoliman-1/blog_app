@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Workable//Calendar
+CALSCALE:GREGORIAN
+METHOD:REQUEST
+BEGIN:VEVENT
+DTSTAMP:20230505T110132Z
+UID:9eu5apyon3ousot8vq2hr0erx8qihycx
+DTSTART:20230509T080000Z
+DTEND:20230509T083000Z
+DESCRIPTION:
+ORGANIZER;CN=ITFAQ:mailto:c4e6b9upgd3ju@events.workablemail.com
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Call for DevOps Engineer - Must Already Be Based in Dubai job at IT
+ FAQ
+TRANSP:OPAQUE
+URL:http://www.workable.com/events/9eu5apyon3ousot8vq2hr0erx8qihycx
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;RSVP=TRUE;PARTSTAT=ACCEPTED
+ ;X-RESPONSE-COMMENT=Once again sorry for the inconvenience. Thank you very
+  much for re-sending the link. 
+Looking forward meeting you. 
+Ahmed.;CN=Ah
+ med Ali Mohamed Soliman:mailto:ahmed-3010@hotmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;RSVP=TRUE;PARTSTAT=ACCEPTED
+ ;CN=Neila Bourouag:mailto:neila.bourouag@itfaq.global
+END:VEVENT
+END:VCALENDAR

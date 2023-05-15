@@ -8,10 +8,16 @@
       <div class="content">
         <span> <%= blog.created.toDateString() %> </span>
       </div>
-      <div class="description">
+      <br />
+      <br />
+      <!-- <div class="description">
         <p><%- blog.body %></p>
-      </div>
-      <textarea class="description" id="textbox"><%- blog.body %></textarea>
+      </div> -->
+      <textarea rows="40" cols="80" class="description" id="textbox">
+<%- blog.body %>
+      </textarea>
+      <br />
+      <br />
       <br />
       <br />
       <button id="clipboard" onclick="copyText()" class="ui green full button">

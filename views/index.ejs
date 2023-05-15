@@ -18,17 +18,29 @@
           <div class="meta">
             <span> <%= blog.created.toDateString() %> </span>
           </div>
-          <div class="desciption">
+          <!-- <div class="desciption">
             <p><%= blog.body.substring(0, 300) %>...</p>
+          </div> -->
+          <div>
+            <textarea rows="7" cols="66" class="description" id="textbox">
+<%- blog.body %>
+            </textarea>
           </div>
           <div class="extra">
             <a
               class="ui floated basic violet button"
               href="/blogs/<%= blog._id%>"
             >
-              Read More
+              Expand
               <i class="right chevron icon"></i>
             </a>
+            <!-- <a
+              id="clipboard"
+              class="ui floated basic violet button"
+              onclick="copyText()"
+            >
+              Copy <i class="down chevron icon"></i
+            ></a> -->
           </div>
         </div>
       </div>
