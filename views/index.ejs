@@ -3,33 +3,35 @@
 <div class="ui main text container">
   <div class="ui huge header">Cover Letters Application</div>
   <p class="ui inverted segment">
-    Current covers count: <%= Object.keys(blogs).length; %>
+    Current covers count: <%= Object.keys(covers).length; %>
   </p>
   <div class="ui top segment">
     <div class="ui divided items">
-      <% blogs.forEach(function(blog) { %>
+      <% covers.forEach(function(cover) { %>
       <div class="item">
         <div class="image">
-          <img src="<%= blog.image %>" />
+          <img src="<%= cover.image %>" />
         </div>
 
         <div class="content">
-          <a class="header" href="/blogs/<%= blog._id%>"> <%= blog.title %> </a>
+          <a class="header" href="/covers/<%= cover._id%>">
+            <%= cover.title %>
+          </a>
           <div class="meta">
-            <span> <%= blog.created.toDateString() %> </span>
+            <span> <%= cover.created.toDateString() %> </span>
           </div>
           <!-- <div class="desciption">
-            <p><%= blog.body.substring(0, 300) %>...</p>
+            <p><%= cover.body.substring(0, 300) %>...</p>
           </div> -->
           <div>
             <textarea rows="7" cols="66" class="description" id="textbox">
-<%- blog.body %>
+<%- cover.body %>
             </textarea>
           </div>
           <div class="extra">
             <a
               class="ui floated basic violet button"
-              href="/blogs/<%= blog._id%>"
+              href="/covers/<%= cover._id%>"
             >
               Expand
               <i class="right chevron icon"></i>
