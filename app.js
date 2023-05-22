@@ -110,7 +110,7 @@ app.delete("/covers/:id", function (req, res) {
     req.params.id,
     req.body.cover,
     function (err, updatedcover) {
-      cover.findByIdAndRemove(req.params.id, function (err) {
+      Blog.findByIdAndRemove(req.params.id, function (err) {
         if (err) {
           res.redirect("/covers");
         } else {
